@@ -10,20 +10,27 @@
 		
 		
 		
-			<lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://cassandraostrander.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Digital Literacy</title>
-				<link>https://cassandraostrander.github.io/tags/digital-literacy/</link>
-				<pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://cassandraostrander.github.io/tags/digital-literacy/</guid>
+				<title>Artifical Intelligence</title>
+				<link>https://cassandraostrander.github.io/tags/artifical-intelligence/</link>
+				<pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://cassandraostrander.github.io/tags/artifical-intelligence/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Data Science</title>
+				<link>https://cassandraostrander.github.io/tags/data-science/</link>
+				<pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://cassandraostrander.github.io/tags/data-science/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>School</title>
 				<link>https://cassandraostrander.github.io/tags/school/</link>
-				<pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+				<pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>https://cassandraostrander.github.io/tags/school/</guid>
 				<description></description>
 			</item>
@@ -49,17 +56,17 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Sample</title>
-				<link>https://cassandraostrander.github.io/tags/sample/</link>
-				<pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
-				<guid>https://cassandraostrander.github.io/tags/sample/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Emoji Support</title>
 				<link>https://cassandraostrander.github.io/tags/emoji-support/</link>
 				<pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
 				<guid>https://cassandraostrander.github.io/tags/emoji-support/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sample</title>
+				<link>https://cassandraostrander.github.io/tags/sample/</link>
+				<pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+				<guid>https://cassandraostrander.github.io/tags/sample/</guid>
 				<description></description>
 			</item>
 			<item>
