@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href="/logo.png" type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="https://cassandraostrander.github.io/blogs/privacy-paradox/">
+	<meta property="og:site_name" content=" Cassandra Profile">
+	<meta property="og:title" content="The Privacy Paradox: Logging In to an AnonymousSurvey  ">
+	<meta property="og:description" content="My first Blog">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blogs">
+		<meta property="article:published_time" content="2026-06-29T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-06-29T00:00:00+00:00">
+		<meta property="article:tag" content="School">
+		<meta property="article:tag" content="Digital Literacy">
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="The Privacy Paradox: Logging In to an AnonymousSurvey  ">
+	<meta name="twitter:description" content="My first Blog">
+
+
+
+
+  
+    <link rel="alternate" hreflang="en" href="https://cassandraostrander.github.io/blogs/privacy-paradox/" title="English">
+  
+  
+  <meta property="og:locale" content="en">
+  
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/language-switcher.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="My first Blog">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+The Privacy Paradox: Logging In to an AnonymousSurvey   |  Cassandra Profile
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/logo.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Cassandra&#39;s Profile
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="Image gallery">
+                            
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">The Privacy Paradox: Logging In to an AnonymousSurvey  </h1>
+            <div class="text-center">
+              
+                Cassandra Ostrander
+                <small>|</small>
+              
+              Jun 29, 2026
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/dataethics.jpg" alt="The Privacy Paradox: Logging In to an AnonymousSurvey  ">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h2 id="when-anonymous-isnt-enough">When &ldquo;Anonymous&rdquo; Isn&rsquo;t Enough</h2>
+<p>Imagine; it’s the end of the semester and you have really struggled with the course, you feel the teacher has favored certain students, and the coursework didn’t make sense. You log in one day and there is a survey for the class that asks how the course was delivered and did it meet your expectations. You think to yourself, “now is my chance to express my concerns with this course! It says it stays anonymous&hellip;&hellip;.right?” And now you begin to worry, because it says it’s anonymous, but how do I know they&rsquo;re not lying?</p>
+<p>Most students (myself included) have completed an online course survey at some point. These surveys typically ask whether the course met expectations, whether the instructor was effective, and how the course could improve. Many of them reassure participants that their responses are anonymous. But what happens when students must log in using their username and password before completing the survey?</p>
+<p>At first glance, this may seem contradictory. If a system requires authentication, can it really be anonymous? This question highlights one of the ethical challenges in data science: maintaining trust while collecting meaningful data.</p>
+<p>In this blog, I&rsquo;ll break down some of the ethical concerns in this survey and talk about why privacy, transparency, and trust matter just as much as the data itself.</p>
+<h2 id="understanding-the-scenario">Understanding the Scenario</h2>
+<p>Students receive a survey after completing a course. Before accessing it, they must log in using their school username and password. The survey then says that the responses will remain anonymous.</p>
+<p>Executive management plans to use the survey results to figure out which courses require redesign or improvement. As the assigned Data Analyst, my responsibility is to evaluate whether the survey design raises ethical concerns and recommend the improvements.</p>
+<p>Although the purpose of improving educational programs is beneficial, the way data is collected can significantly affect both the students trust and the accuracy of the data collected.</p>
+<h2 id="ethical-concern-1-authentication-vs-anonymity">Ethical Concern #1: Authentication vs. Anonymity</h2>
+<p>The first ethical concern is the contradiction between requiring login credentials while promising anonymity. From a technical perspective, both statements could be true, but how would the students know? The login process may simply verify that the respondent is enrolled in the course before generating a random survey identifier that removes all personal information&hellip;&hellip;however, the survey never explains how this process works.</p>
+<p>Without transparency, Students may assume their responses can be traced back to them and in that case never respond truthfully.  Whether this assumption is true, the thought may discourage honest feedback.</p>
+<p>In the end, Ethics in data science extends beyond technical implementation. Building trust with participants is equally important.</p>
+<h2 id="ethical-concern-2-response-bias">Ethical Concern #2: Response Bias</h2>
+<p>When students believe their identities may be known, they will likely alter their responses.</p>
+<p>For example, a student who disliked a course may choose a higher rating out of concern that negative comments could affect their relationship with an instructor, which may lead to bad marks. This introduces response bias. At the end of the day, if people don&rsquo;t trust the survey enough to answer honestly, the data loses value. Management could end up making decisions based on feedback that doesn&rsquo;t really reflect how students feel.</p>
+<p>From a data analyst&rsquo;s perspective, protecting participant confidence directly improves data quality.</p>
+<h2 id="ethical-concern-3-lack-of-transparency">Ethical Concern #3: Lack of Transparency</h2>
+<p>Another ethical concern involves informed consent.</p>
+<p>The survey explains that responses are anonymous but does not answer several important questions:</p>
+<p>Who can access the data?</p>
+<p>How long will responses be stored?</p>
+<p>Will login information be deleted?</p>
+<p>Can administrators reconnect responses to students?</p>
+<p>Is participation voluntary?</p>
+<p>Without this information, students cannot make a fully informed decision about sharing their opinions. Transparency is a fundamental principle of responsible data collection.</p>
+<h2 id="ethical-concern-4-the-survey-question-itself">Ethical Concern #4: The Survey Question Itself</h2>
+<p>The survey begins with the statement:</p>
+<p>&ldquo;This course met all of the course objectives.&rdquo;</p>
+<p>Participants rate this statement on a scale from 0 to 10. The problem here is that some students may have entered the course with 0 expectations, so how do they know if the course objectives were met? Students may not fully understand the official course objectives. Different students may interpret the statement differently, making responses inconsistent.</p>
+<p>I also think one question only tells part of the story. A student&rsquo;s experience is made up of a lot of different factors, and trying to sum it all up with one rating can leave out important feedback. Allowing students to ask questions exploring instructor effectiveness, course materials, workload, and learning outcomes would likely produce more meaningful insights.</p>
+<h2 id="recommendations">Recommendations</h2>
+<p>As the data analyst, I would recommend several improvements before distributing the survey.</p>
+<p>First, explain why login credentials are needed and how anonymity is protected. Even a short statement explaining that usernames are separated from survey responses after authentication would help build trust.</p>
+<p>Second, include a privacy notice outlining:</p>
+<p>who has access to the results,</p>
+<p>how the data will be stored,</p>
+<p>how long it will be retained,</p>
+<p>and whether participation is voluntary.</p>
+<p>Third, redesign the survey to include multiple questions measuring different aspects of the course rather than relying primarily on one overall rating.</p>
+<p>Finally, I&rsquo;d only report the survey results instead of showing individual responses. Even if names aren&rsquo;t included, it can sometimes be easy to guess who is in a small class.</p>
+<p>What If Management Refuses?</p>
+<p>Sometimes the higher ups choose not to implement ethical recommendations. If management rejected my suggestions while insisting that the survey posed no ethical concerns, I would still have professional responsibilities. As a data analyst, I would document my recommendations, explain the potential privacy and data quality risks, and ensure my concerns were communicated through proper channels. Even if nothing changes right away, I think it&rsquo;s still important to document those concerns. It shows the risks were identified and gives the organization a chance to revisit them if issues come up later. Ethical professionals cannot always control final decisions, but they are responsible for providing informed, evidence-based advice.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This blog shows that ethical data collection involves more than simply protecting personal information. It also requires transparency, participant trust, and thoughtful survey design.</p>
+<p>At the end of the day, it comes down to trust. Even if the survey is anonymous, students are less likely to be honest if they don&rsquo;t understand how their identity is being protected.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#when-anonymous-isnt-enough">When &ldquo;Anonymous&rdquo; Isn&rsquo;t Enough</a></li>
+    <li><a href="#understanding-the-scenario">Understanding the Scenario</a></li>
+    <li><a href="#ethical-concern-1-authentication-vs-anonymity">Ethical Concern #1: Authentication vs. Anonymity</a></li>
+    <li><a href="#ethical-concern-2-response-bias">Ethical Concern #2: Response Bias</a></li>
+    <li><a href="#ethical-concern-3-lack-of-transparency">Ethical Concern #3: Lack of Transparency</a></li>
+    <li><a href="#ethical-concern-4-the-survey-question-itself">Ethical Concern #4: The Survey Question Itself</a></li>
+    <li><a href="#recommendations">Recommendations</a></li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              
+              <li class="list-inline-item"><a href="/tags/school"
+                target="_blank"
+              >School</a></li>
+              
+              
+              <li class="list-inline-item"><a href="/tags/digital-literacy"
+                target="_blank"
+              >Digital Literacy</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=My%20first%20Blog https%3a%2f%2fcassandraostrander.github.io%2fblogs%2fprivacy-paradox%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='https://twitter.com/share?text=The%20Privacy%20Paradox%3a%20Logging%20In%20to%20an%20AnonymousSurvey%20%20&url=https%3a%2f%2fcassandraostrander.github.io%2fblogs%2fprivacy-paradox%2f&hashtags=School%2cDigital%20Literacy'>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=The%20Privacy%20Paradox%3a%20Logging%20In%20to%20an%20AnonymousSurvey%20%20: https%3a%2f%2fcassandraostrander.github.io%2fblogs%2fprivacy-paradox%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=The%20Privacy%20Paradox%3a%20Logging%20In%20to%20an%20AnonymousSurvey%20%20&amp;body=Check%20out%20this%20site https%3a%2f%2fcassandraostrander.github.io%2fblogs%2fprivacy-paradox%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+
+
+  
+
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/privacy-paradox/">
+                        <img src="/images/dataethics.jpg" class="card-img-top" alt="The Privacy Paradox: Logging In to an AnonymousSurvey  ">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/privacy-paradox/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="The Privacy Paradox: Logging In to an AnonymousSurvey  ">The Privacy Paradox: …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="when-anonymous-isnt-enough">When &ldquo;Anonymous&rdquo; Isn&rsquo;t Enough</h2>
+<p>Imagine; it’s the end of the semester and you have really struggled with the course, you feel the teacher has favored certain students, and the coursework didn’t make sense. You log in one day and there is a survey for the class that asks how the …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">June 29, 2026</span>
+                    <a href="/blogs/privacy-paradox/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/math/">
+                        <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/math/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="mathjax">Mathjax</h2>
+<p>Math equations can be rendered using <a href="https://www.mathjax.org">Mathjax</a> syntax with AMS symbol support.</p>
+<p>Optionally enable this on a per-page basis by adding <code>mathjax: true</code> to your frontmatter.</p>
+<p>Then, use <code>$$ ... $$</code> on a line by itself to render a block equation:</p>
+<p>$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">December 9, 2022</span>
+                    <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/markdown-syntax/">
+                        <img src="/images/post.jpg" class="card-img-top" alt="Markdown Syntax">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/markdown-syntax/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="paragraph">Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 3, 2021</span>
+                    <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://cassandraostrander.github.io/" title=" Cassandra Profile">
+                        <img alt="Footer logo" src="/logo.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2026  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script>
+      
+      window.searchIndexURL = "/index.json";
+    </script>
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
