@@ -6,15 +6,15 @@ body {
 
 /* secondary font */
 .secondary-font, #secondary-font {
-    font-family: "helvetica", serif;
+    font-family: "helvetica", Arial, Helvetica, sans-serif;
 }
 
 /* primary font */
 .primary-font, #primary-font {
-    font-family: "", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Default font */
 .default-font, #default-font {
-    font-family: "Roboto", sans-serif;
+    font-family: "franklin gothic medium", "franklin gothic", "franklin gothic book", sans-serif !important;
 }
