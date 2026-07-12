@@ -103,6 +103,8 @@ header .navbar.animate {
     font-size: clamp(40px, 8vw, 60px);
     opacity: 1;
     color: #ffffff !important;
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 #hero p {
@@ -358,7 +360,8 @@ header .navbar.animate {
 }
 
 #experience .experience-container .tab-content .tab-pane .featuredLink img {
-    width: 1.1em;
+    width: 3.3em;
+    height: 3.3em;
 }
 
 #experience .experience-container .tab-content .tab-pane .featuredLink a::after {
